@@ -183,4 +183,8 @@ input.search-field:focus ~ .search-popup {
 .carousel {
   max-height:600px !important;
 }
+#message {
+  margin-top:20px;
+  color: rgb(182, 186, 191);
+}
 
