@@ -97,7 +97,9 @@ $(document).ready(function () {
     $("#searchForm").submit(function() {
         var state = $('#search-input').val();
         // console.log('state = ', state);
-        abbrState(state);
+        var stateName = abbrState(state);
+        localStorage.setItem("state", stateName);
+        location.href = "http://google.com";
         clear();
         return false;
     });
