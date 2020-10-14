@@ -78,10 +78,12 @@ $(document).ready(function () {
             if (states[i][0] === statePassed) {
                     state = (states[i][1]);
                     console.log('returned ', states[i][1]);
+                    location.href = "parks.html";
                     return (state);
             } else if (states[i][1] === statePassed) {
                 state = (states[i][1]);
                 console.log('returned ', states[i][1]);
+                location.href = "parks.html";
                 return (state);
             } else if (i >= 49) {
                 console.log('this');
@@ -99,7 +101,6 @@ $(document).ready(function () {
         // console.log('state = ', state);
         var stateName = abbrState(state);
         localStorage.setItem("state", stateName);
-        location.href = "http://google.com";
         clear();
         return false;
     });
