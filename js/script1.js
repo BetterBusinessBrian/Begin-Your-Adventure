@@ -99,7 +99,7 @@ $(document).ready(function () {
         // console.log('state = ', state);
         var stateName = abbrState(state);
         localStorage.setItem("state", stateName);
-        location.href = "http://google.com";
+        location.href = "index2.html";
         clear();
         return false;
     });
