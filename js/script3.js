@@ -1,4 +1,6 @@
 
+// var state = localStorage.getItem("state")
+
 var state = localStorage.getItem("state")
 parkNumber = localStorage.getItem("ParkNumber");
 var queryUrl = "https://developer.nps.gov/api/v1/parks?stateCode=" + state + "&api_key=f752B00Hli3S9ed2PsgaxTti5XBmaUL70IP4ZcTu"
@@ -24,8 +26,15 @@ $.ajax({
     $(".carousel").append(newSlide);
     i++;
   });
+
+
   // initialize the carousel
   $(".carousel").carousel();
+
+//   $('.carousel').carousel({
+//     fullWidth: true,
+//     indicators: true,
+// });
 
   // Populate Park Name
   $(".parkName").text(park.fullName)
