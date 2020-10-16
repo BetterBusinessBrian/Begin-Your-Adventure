@@ -65,6 +65,44 @@ body {
   footer.page-footer {
     margin: 0;
   }
+  }
+  
+  nav ul a,
+  nav .brand-logo {
+    color: #444;
+  }
+  /* --------- Typography ------- */
+  p {
+    line-height: 2rem;
+  }
+  /* --------- Button ------- */
+  .sidenav-trigger {
+    color: #26a69a;
+  }
+  
+  .parallax-container {
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255,255,255,.9);
+  }
+    .parallax-container .section {
+      width: 100%;
+    }
+  
+  
+  
+  
+  .icon-block {
+    padding: 0 15px;
+  }
+  .icon-block .material-icons {
+    font-size: inherit;
+  }
+  
+  footer.page-footer {
+    margin: 0;
+  }
   /* search bar CSS */
   
   .search-close-icon{
@@ -214,10 +252,15 @@ body {
   }
   
   /* page 2 card css */
+
   .card {
     width: 400px;
     padding: 10px;
     cursor: pointer;
+}
+  .cardCss {
+    width: 400px;
+    padding: 10px;
   }
   .cardtitle{
     display: block;
@@ -243,7 +286,9 @@ body {
     object-fit: cover;
   }
   
+
   #nav-mobile a {
     color: white;
   }
+
   

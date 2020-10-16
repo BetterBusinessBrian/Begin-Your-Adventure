@@ -1,6 +1,8 @@
 
+
 var parkName = ""
 var state = localStorage.getItem("state")
+
 var queryUrl = "https://developer.nps.gov/api/v1/parks?stateCode=" + state + "&api_key=f752B00Hli3S9ed2PsgaxTti5XBmaUL70IP4ZcTu"
 
 $.ajax({
@@ -8,15 +10,19 @@ $.ajax({
     method: "GET"
 }).then(function (response) {
 
+
     lat = response.data[1].latitude
     long = response.data[1].longitude
     console.log(response)
 
 
+
 // for loop to create cards
     for (i = 0; i < response.data.length; i++) {
         var div1 = $('<div/>');
-        div1.addClass("card");
+
+        div1.addClass("card cardCss");
+
         // adding data index for on click
         div1.data("dataNum", [i]);
         console.log(div1.data());
@@ -29,7 +35,9 @@ $.ajax({
         img.addClass("images circle");
         div2.append(img);
         var title = $('<span/>', { text: response.data[i].fullName })
+
         title.addClass("cardtitle");
+
         div2.append(title);
         var div3 = $('<div/>');
         div3.addClass("card-content")
@@ -43,12 +51,16 @@ $.ajax({
         div1.append(div4);
 
         $(".starter").append(div1);
+
     }
     // adding click function
     $(".card").on("click", function () {
         var dataNumber = $(this).data("dataNum")
         localStorage.setItem("ParkNumber", dataNumber);
         location.href = "index3.html";
+
+        console.log("clicked")
+
 
     })
 });
