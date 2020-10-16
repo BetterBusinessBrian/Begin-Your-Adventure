@@ -14,9 +14,28 @@ body {
   nav .brand-logo {
     color: #444;
   }
+
+  #page3main {
+    margin: 2em;
+  }
+
+  #page3main h6 {
+    font-size: 1.4em;
+  }
+
+  .carousel-slider img {
+    object-fit: cover;
+  }
   /* --------- Typography ------- */
   p {
     line-height: 2rem;
+  }
+
+  .parkName {
+    font-size: 1.8em;
+  }
+  .nav-wrapper .parkName {
+    margin-left: 20px;
   }
   /* --------- Button ------- */
   .sidenav-trigger {
@@ -198,6 +217,7 @@ body {
   .card {
     width: 400px;
     padding: 10px;
+    cursor: pointer;
   }
   .cardtitle{
     display: block;
@@ -223,4 +243,7 @@ body {
     object-fit: cover;
   }
   
+  #nav-mobile a {
+    color: white;
+  }
   

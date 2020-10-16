@@ -25,8 +25,14 @@ $.ajax({
     $(".carousel").append(newSlide);
     i++;
   });
+
   // initialize the carousel
   $(".carousel").carousel();
+
+//   $('.carousel').carousel({
+//     fullWidth: true,
+//     indicators: true,
+// });
 
   // Populate Park Name
   $(".parkName").text(park.fullName)

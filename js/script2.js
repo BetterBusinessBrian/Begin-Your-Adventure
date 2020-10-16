@@ -12,6 +12,7 @@ $.ajax({
     long = response.data[1].longitude
     console.log(response)
 
+
 // for loop to create cards
     for (i = 0; i < response.data.length; i++) {
         var div1 = $('<div/>');
@@ -28,7 +29,7 @@ $.ajax({
         img.addClass("images circle");
         div2.append(img);
         var title = $('<span/>', { text: response.data[i].fullName })
-        title.addClass("title");
+        title.addClass("cardtitle");
         div2.append(title);
         var div3 = $('<div/>');
         div3.addClass("card-content")
@@ -42,7 +43,6 @@ $.ajax({
         div1.append(div4);
 
         $(".starter").append(div1);
-        $(".starter").append($("<br>"));
     }
     // adding click function
     $(".card").on("click", function () {

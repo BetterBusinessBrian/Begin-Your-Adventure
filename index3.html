@@ -12,9 +12,9 @@
 </head>
 
 <body>
-  <div class="container">
+  <header>
     <nav>
-      <div class="nav-wrapper green darken-3">
+      <div class="nav-wrapper teal darken-4">
         <a href="indexhtml3.html" class="brand-logo white-text parkName">Park Name</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="index2.html">Back to Park Select</a></li>
@@ -26,143 +26,171 @@
     <!-- !-- Gene's carousel. need to make larger -->
     <div class="carousel">
     </div>
-    <!-- New layout-->
+  </header>
+
+  <main id="page3main">
+    <!-- Layout with two stacking divs and a weather sidebar -->
     <div class="row">
-      <div class="col s9">
-        <div class="card green darken-3">
-          <div class="card-content white-text">
-            <span class="card-title parkName">Park Name</span>
-          </div>
+      <!-- Main content column -->
+      <div class="col s8">
+        <div class="col s12 parkDetails">
+          <!-- <div class="card green darken-3"> -->
+          <h3 class="parkName">Park Name</h3>
           <div class="card-action">
-            <h6 class="white-text">Description:</h6>
-            <p class="description white-text"></p>
-            <h6 class="white-text">Address:</h6>
-            <p class="address white-text"></p>
-            <h6 class="white-text">Operating Hours:</h6>
-            <!-- Operating Hours Modal -->
-            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Click here to view</a>
-            <div id="modal1" class="modal">
-              <div class="modal-content">
-                <h4>Operating Hours:</h4>
-                <p class="operating"></p>
-                <p class="monday"></p>
-                <p class="tuesday"></p>
-                <p class="wednesday"></p>
-                <p class="thursday"></p>
-                <p class="friday"></p>
-                <p class="saturday"></p>
-                <p class="sunday"></p>
-              </div>
-              <div class="modal-footer">
-                <a href="#!" class="modal-close waves-effect waves-green darken-3 btn-flat">Agree</a>
-              </div>
-            </div>
-            <!-- -- -->
-
-            <h6 class="white-text">Entry Fees:</h6>
-            <!-- Entry Fee Modal -->
-            <a class="waves-effect waves-light btn modal-trigger" href="#modal2">Click here to view</a>
-            <div id="modal2" class="modal">
-              <div class="modal-content fees">
-                <h4>Entry Fees</h4>
-
-              </div>
-              <div class="modal-footer">
-                <a href="#!" class="modal-close waves-effect waves-green darken-3 btn-flat">Agree</a>
-              </div>
-            </div>
-            <!-- -- -->
-
-            <h6 class="white-text">Official Links:</h6>
-            <a class="waves-effect waves-light btn parkDirections"> Park Directions</a>
-            <a class="waves-effect waves-light btn parkWebsite">Official Park Website</a>
+            <h6>Description:</h6>
+            <p class="description"></p>
+            <h6>Address:</h6>
+            <p class="address"></p>
           </div>
+          <!-- action buttons -->
+          <div class="row">
+            <!-- operating hours div -->
+            <div class="col s3">
+              <h6>Operating Hours:</h6>
+              <!-- Operating Hours Modal -->
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Click here to view</a>
+              <div id="modal1" class="modal">
+                <div class="modal-content">
+                  <h4>Operating Hours:</h4>
+                  <p class="operating"></p>
+                  <p class="monday"></p>
+                  <p class="tuesday"></p>
+                  <p class="wednesday"></p>
+                  <p class="thursday"></p>
+                  <p class="friday"></p>
+                  <p class="saturday"></p>
+                  <p class="sunday"></p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-close waves-effect waves-green darken-3 btn-flat">Agree</a>
+                </div>
+              </div>
+            </div>
+            <!-- entry fees div -->
+            <div class="col s3">
+              <h6>Entry Fees:</h6>
+              <!-- Entry Fee Modal -->
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal2">Click here to view</a>
+              <div id="modal2" class="modal">
+                <div class="modal-content fees">
+                  <h4>Entry Fees</h4>
+
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-close waves-effect waves-green darken-3 btn-flat">Agree</a>
+                </div>
+              </div>
+            </div>
+            <!-- offical links div -->
+            <div class="col s3">
+              <h6>Official Links:</h6>
+              <a class="waves-effect waves-light btn parkDirections"> Park Directions</a>
+              <a class="waves-effect waves-light btn parkWebsite">Official Park Website</a>
+            </div>
+          </div>
+
+
+          
+
         </div>
-        <br>
-        <div class="card green darken-3">
+        <!-- second row div -->
+        <div class="col s12 teal darken-1">
           <div class="card-content white-text">
             <span class="card-title">Weather</span>
           </div>
           <div class="card-action white-text">
             <span>
-            <h6 class="white-text" style = "display: inline;">Current:</h6>
-            <img class="headIcon">
-          </span>
-          <p class="temp topText"></p>
-          <p class="humid topText"></p>
-          <p class="windspeed topText"></p>
-      
+              <h6 class="white-text" style="display: inline;">Current:</h6>
+              <img class="headIcon">
+            </span>
+            <p class="temp topText"></p>
+            <p class="humid topText"></p>
+            <p class="windspeed topText"></p>
+  
             <br>
             <h6 class="white-text">5 Day:</h6>
-              <div class="s2 forecast">
-                  <h5 class="date" id="1">day</h5>
-                  <img class="icon" id="1">
-                  <p class="forecastTemp" id="1">Temp</p>
-                  <p class="forecastHumid" id="1">Humidity</p>
-              </div>
-              <div class="s2 forecast">
-                  <h5 class="date" id="2">day</h5>
-                  <img class="icon" id="2">
-                  <p class="forecastTemp" id="2">Temp</p>
-                  <p class="forecastHumid" id="2">Humidity</p>
-              </div>
-              <div class="s2 forecast">
-                  <h5 class="date" id="3">day</h5>
-                  <img class="icon" id="3">
-                  <p class="forecastTemp" id="3">Temp</p>
-                  <p class="forecastHumid" id="3">Humidity</p>
-              </div>
-              <div class="s2 forecast">
-                  <h5 class="date" id="4">day</h5>
-                  <img class="icon" id="4">
-                  <p class="forecastTemp" id="4">Temp</p>
-                  <p class="forecastHumid" id="4">Humidity</p>
-              </div>
-              <div class="s2 forecast">
-                  <h5 class="date" id="5">day</h5>
-                  <img class="icon" id="5">
-                  <p class="forecastTemp" id="5">Temp</p>
-                  <p class="forecastHumid" id="5">Humidity</p>
-              </div>
+            <div class="row">
+            <div class="col s2 forecast">
+              <h5 class="date" id="1">day</h5>
+              <img class="icon" id="1">
+              <p class="forecastTemp" id="1">Temp</p>
+              <p class="forecastHumid" id="1">Humidity</p>
+            </div>
+            <div class="col s2 forecast">
+              <h5 class="date" id="2">day</h5>
+              <img class="icon" id="2">
+              <p class="forecastTemp" id="2">Temp</p>
+              <p class="forecastHumid" id="2">Humidity</p>
+            </div>
+            <div class="col s2 forecast">
+              <h5 class="date" id="3">day</h5>
+              <img class="icon" id="3">
+              <p class="forecastTemp" id="3">Temp</p>
+              <p class="forecastHumid" id="3">Humidity</p>
+            </div>
+            <div class="col s2 forecast">
+              <h5 class="date" id="4">day</h5>
+              <img class="icon" id="4">
+              <p class="forecastTemp" id="4">Temp</p>
+              <p class="forecastHumid" id="4">Humidity</p>
+            </div>
+            <div class="col s2 forecast">
+              <h5 class="date" id="5">day</h5>
+              <img class="icon" id="5">
+              <p class="forecastTemp" id="5">Temp</p>
+              <p class="forecastHumid" id="5">Humidity</p>
             </div>
           </div>
+          </div>
+            
+
         </div>
+      </div>
+
+
       
-      <div class="col s3">
-        <div class="card green darken-3">
-          <div class="card-content white-text activities">
-            <span class="card-title">Activities</span>
-          </div>
+
+
+
+      <!-- sidebar column -->
+      <div class="col s3 offset-s1 card">
+        <div class="card-content activities">
+          <h6 class="card-title">Activities</h6>
+        </div>
+  
+      </div>
+
+
+    </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="page-footer teal darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l12 s12">
+          <h5 class="white-text">Your Adventure Team</h5>
+          <p class="grey-text text-lighten-4">Our team is made of up of the best in the business and we are
+            here to make your dreams happen. Please feel free to contact us with any questions or if you
+            would like to see more features. Go ahead, start your adventure. </p>
+
+
         </div>
       </div>
     </div>
-    <!-- Footer -->
-    <footer class="page-footer green darken-3 darken-3">
+    <div class="footer-copyright">
       <div class="container">
-          <div class="row">
-              <div class="col l12 s12">
-                  <h5 class="white-text">Your Adventure Team</h5>
-                  <p class="grey-text text-lighten-4">Our team is made of up of the best in the business and we are
-                      here to make your dreams happen. Please feel free to contact us with any questions or if you
-                      would like to see more features. Go ahead, start your adventure. </p>
-
-
-              </div>
-          </div>
+        Made by Code Junkies
       </div>
-      <div class="footer-copyright">
-          <div class="container">
-              Made by Code Junkies
-          </div>
-      </div>
-  </footer>
     </div>
+  </footer>
 
   <script src="https://code.jquery.com/jquery.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript" src="./js/materialize.js"></script>
   <script type="text/javascript" src="js/script3.js"></script>
- 
+
 </body>
 
 </html>
