@@ -6,10 +6,8 @@ $.ajax({
     url: queryUrl,
     method: "GET"
 }).then(function (response) {
-    console.log(reponse)
+    console.log(response)
 
-    lat = response.data[1].latitude
-    long = response.data[1].longitude
 
 // for loop to create cards
     for (i = 0; i < response.data.length; i++) {
@@ -23,7 +21,10 @@ $.ajax({
         div2.addClass("card-image");
         div1.append(div2);
         var img = $('<img/>');
-        img.attr("src", response.data[i].images[0].url)
+        if(response.data[i].images.length !== 0){
+        img.attr("src", response.data[i].images[0].url)}else{
+        img.attr("src", "images/noimg.png")
+        }
         img.addClass("images circle");
         div2.append(img);
         var title = $('<span/>', { text: response.data[i].fullName })
