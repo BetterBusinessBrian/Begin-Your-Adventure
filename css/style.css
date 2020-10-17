@@ -66,7 +66,6 @@ body {
     margin: 0;
   }
 
-  }
   
   nav ul a,
   nav .brand-logo {
@@ -75,6 +74,13 @@ body {
   /* --------- Typography ------- */
   p {
     line-height: 2rem;
+  }
+
+  .parkName {
+    font-size: 1.8em;
+  }
+  .nav-wrapper .parkName {
+    margin-left: 20px;
   }
   /* --------- Button ------- */
   .sidenav-trigger {
@@ -202,10 +208,10 @@ body {
   
   @media only screen and (max-width: 600px) {
     
-    ::placeholder {
-      /* Chrome, Firefox, Opera, Safari 10.1+ */
-      /* color: transparent; */
-    }
+    /* ::placeholder {
+      Chrome, Firefox, Opera, Safari 10.1+
+      color: transparent; 
+    } */
     #index-banner .section {
       top: 0;
     }

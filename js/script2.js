@@ -44,7 +44,6 @@ $.ajax({
         div1.append(div4);
 
         $(".starter").append(div1);
-
     }
     // adding click function
     $(".card").on("click", function () {

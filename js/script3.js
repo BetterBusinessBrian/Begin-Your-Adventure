@@ -38,6 +38,11 @@ $.ajax({
 //     indicators: true,
 // });
 
+//   $('.carousel').carousel({
+//     fullWidth: true,
+//     indicators: true,
+// });
+
   // Populate Park Name
   $(".parkName").text(park.fullName)
   // Populate Activities
