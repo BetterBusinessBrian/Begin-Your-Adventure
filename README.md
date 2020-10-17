@@ -1,7 +1,7 @@
 ![LOGO](https://user-images.githubusercontent.com/68473729/96349414-78e28680-107d-11eb-9b82-ef17715b042a.png)
 
-"Begin Your Adventure" allows you to find national parks in the state of your choice. The opening page has a text input area for the state name.
-Once a state is input, the user is redirected to a page showing cards of all of the national parks in their chosen state. The user then chooses a card and will be redirected to a detail of that park and the current weather information.
+"Begin Your Adventure" allows a user to find national parks in the state of their choice. The opening page has a text input area for the state name.
+Once a state is input, the user is redirected to a page showing cards of all of the national parks in their chosen state. The user then chooses a card and will be redirected to a detail of that park, its amenities, fees and other important information as well as the current weather information.
 
 ![Screenshot](https://user-images.githubusercontent.com/68473729/96349435-97488200-107d-11eb-88c0-f5dcf88c54de.jpg)
 
