@@ -1,11 +1,11 @@
 ![LOGO](https://user-images.githubusercontent.com/68473729/96349414-78e28680-107d-11eb-9b82-ef17715b042a.png)<br>
 
 **Index**
-User Story
-Accessibility
-Contributors
-Things that worked well
-Things we would improve next time
+User Story<br>
+Accessibility<br>
+Contributors<br>
+Things that worked well<br>
+Things we would improve next time<br>
 
 
 **User Story**<br>
