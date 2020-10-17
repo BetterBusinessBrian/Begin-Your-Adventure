@@ -278,6 +278,12 @@ body {
     font-size: 1.2em;
     font-weight: 500;
   }
+  
+  .card-title3{
+    font-weight: bolder;
+    color: #1c1916;
+    text-decoration: underline;
+  }
   /* Set up grid container */
   .grid-container {
     display: grid;
