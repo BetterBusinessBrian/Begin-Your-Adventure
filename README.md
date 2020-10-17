@@ -1,4 +1,13 @@
 ![LOGO](https://user-images.githubusercontent.com/68473729/96349414-78e28680-107d-11eb-9b82-ef17715b042a.png)<br>
+
+**Index**
+User Story
+Accessibility
+Contributors
+Things that worked well
+Things we would improve next time
+
+
 **User Story**<br>
 As a person planning a visit to a national park, I want to be able to quickly locate park information so that I can plan a trip. End user goal: quickly find park information End business goal: Increase visitation to National Parks  Measurement of success: User is able to find detailed information of parks in less than three mouse clicks.
 
