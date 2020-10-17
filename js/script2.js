@@ -8,15 +8,11 @@ $.ajax({
     method: "GET"
 }).then(function (response) {
 
-    lat = response.data[1].latitude
-    long = response.data[1].longitude
-    console.log(response)
-
-
 // for loop to create cards
     for (i = 0; i < response.data.length; i++) {
         var div1 = $('<div/>');
-        div1.addClass("card");
+        div1.addClass("card cardCss");
+
         // adding data index for on click
         div1.data("dataNum", [i]);
         console.log(div1.data());
@@ -25,11 +21,16 @@ $.ajax({
         div2.addClass("card-image");
         div1.append(div2);
         var img = $('<img/>');
-        img.attr("src", response.data[i].images[0].url)
+        if(response.data[i].images.length !== 0){
+        img.attr("src", response.data[i].images[0].url)}else{
+        img.attr("src", "images/noimg.png")
+        }
         img.addClass("images circle");
         div2.append(img);
         var title = $('<span/>', { text: response.data[i].fullName })
+
         title.addClass("cardtitle");
+
         div2.append(title);
         var div3 = $('<div/>');
         div3.addClass("card-content")
@@ -49,6 +50,8 @@ $.ajax({
         var dataNumber = $(this).data("dataNum")
         localStorage.setItem("ParkNumber", dataNumber);
         location.href = "index3.html";
+
+        console.log("clicked")
 
     })
 });
