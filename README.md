@@ -24,12 +24,12 @@ The project represents the first group project for the five contributors enrolle
 The code includes semantic tags that help navigate through the website.
 
 **Contributors**<br>
-Thanks to the following people who contributed to this project:
-[Paul Hagwood](https://pmhagwood.github.io/portfolio/)
-[Rachel Moore](https://rachelmoore2020.github.io/Rachel-Moore-Portfolio/)
-[Brian Whitman](https://github.com/BetterBusinessBrian)
-[Gene Duncan](https://duncangw1.github.io/ResponsivePortfolio/)
-[Georgette Bondarek](https://georgettebondarek.github.io/ResponsivePortfolio/)
+Thanks to the following people who contributed to this project:<br>
+[Paul Hagwood](https://pmhagwood.github.io/portfolio/)<br>
+[Rachel Moore](https://rachelmoore2020.github.io/Rachel-Moore-Portfolio/)<br>
+[Brian Whitman](https://github.com/BetterBusinessBrian)<br>
+[Gene Duncan](https://duncangw1.github.io/ResponsivePortfolio/)<br>
+[Georgette Bondarek](https://georgettebondarek.github.io/ResponsivePortfolio/)<br>
 
 **Demo**<br>
 ![Project1](https://user-images.githubusercontent.com/68473729/96350002-30c56300-1081-11eb-980e-0cf8ca76a977.gif)
