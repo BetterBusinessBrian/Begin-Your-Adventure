@@ -1,19 +1,16 @@
 
-
 var parkName = ""
 var state = localStorage.getItem("state")
-
 var queryUrl = "https://developer.nps.gov/api/v1/parks?stateCode=" + state + "&api_key=f752B00Hli3S9ed2PsgaxTti5XBmaUL70IP4ZcTu"
 
 $.ajax({
     url: queryUrl,
     method: "GET"
 }).then(function (response) {
-    
+
 // for loop to create cards
     for (i = 0; i < response.data.length; i++) {
         var div1 = $('<div/>');
-
         div1.addClass("card cardCss");
 
         // adding data index for on click
@@ -56,7 +53,6 @@ $.ajax({
         location.href = "index3.html";
 
         console.log("clicked")
-
 
     })
 });

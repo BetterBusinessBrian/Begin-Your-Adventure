@@ -65,6 +65,7 @@ body {
   footer.page-footer {
     margin: 0;
   }
+
   }
   
   nav ul a,
@@ -103,6 +104,7 @@ body {
   footer.page-footer {
     margin: 0;
   }
+
   /* search bar CSS */
   
   .search-close-icon{
@@ -257,10 +259,6 @@ body {
     width: 400px;
     padding: 10px;
     cursor: pointer;
-}
-  .cardCss {
-    width: 400px;
-    padding: 10px;
   }
   .cardtitle{
     display: block;

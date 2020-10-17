@@ -28,7 +28,7 @@ $.ajax({
       $(".carousel").append(newSlide);
       i++;
     });
-  
+
   // initialize the carousel
   $(".carousel").carousel();
   }
@@ -137,7 +137,6 @@ $.ajax({
         })
 
       });
-
     }
 
   });
