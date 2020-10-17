@@ -19,7 +19,7 @@ Thanks to the following people who contributed to this project:
 [Rachel Moore](https://rachelmoore2020.github.io/Rachel-Moore-Portfolio/)
 [Brian Whitman](https://github.com/BetterBusinessBrian)
 [Gene Duncan](https://duncangw1.github.io/ResponsivePortfolio/)
-[Georgette Bondarek]()
+[Georgette Bondarek](https://georgettebondarek.github.io/ResponsivePortfolio/)
 
 Things that worked well:
 The group was well suited to work with one another because the interest and experience level was evenly divided between front end developers and mid and back end developers. The front end developers all made designs at the start of the project. We then agreed on a format for the website and divided the pages 
