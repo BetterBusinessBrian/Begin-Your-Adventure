@@ -1,6 +1,6 @@
 ![LOGO](https://user-images.githubusercontent.com/68473729/96349414-78e28680-107d-11eb-9b82-ef17715b042a.png)<br>
 
-**Index**
+**Index**<br>
 User Story<br>
 Accessibility<br>
 Contributors<br>
