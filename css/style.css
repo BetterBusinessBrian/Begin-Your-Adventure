@@ -26,6 +26,10 @@ body {
   .carousel-slider img {
     object-fit: cover;
   }
+
+  .parkDirections {
+    margin-bottom: 10px;
+  }
   /* --------- Typography ------- */
   p {
     line-height: 2rem;
@@ -296,5 +300,6 @@ body {
   }
 
   /* increasing size of carousel */
-  .carousel .carousel-item {
-    width:400px !important;}
+  .page3carousel .carousel-item {
+    width:400px !important;
+  }

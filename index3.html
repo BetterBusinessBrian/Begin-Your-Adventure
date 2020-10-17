@@ -26,7 +26,7 @@
     </nav>
 
    
-    <div class="carousel">
+    <div class="carousel page3carousel">
     </div>
   </header>
 
@@ -34,8 +34,8 @@
     <!-- Layout with two stacking divs and a weather sidebar -->
     <div class="row">
       <!-- Main content column -->
-      <div class="col s8">
-        <div class="col s12 parkDetails">
+      <div class="col s9">
+        <div class="col s12 parkDetails card">
           <!-- <div class="card green darken-3"> -->
           <h3 class="parkName">Park Name</h3>
           <div class="card-action">
@@ -98,7 +98,7 @@
         <!-- second row div -->
         <div class="col s12 teal darken-1">
           <div class="card-content white-text">
-            <span class="card-title">Weather</span>
+            <h4 class="card-title">Weather</h4>
           </div>
           <div class="card-action white-text">
             <span>
@@ -142,25 +142,13 @@
               <p class="forecastTemp" id="5">Temp</p>
               <p class="forecastHumid" id="5">Humidity</p>
             </div>
-            <div class="col s2 forecast">
-              <h5 class="date" id="4">day</h5>
-              <img class="icon" id="4">
-              <p class="forecastTemp" id="4">Temp</p>
-              <p class="forecastHumid" id="4">Humidity</p>
-            </div>
-            <div class="col s2 forecast">
-              <h5 class="date" id="5">day</h5>
-              <img class="icon" id="5">
-              <p class="forecastTemp" id="5">Temp</p>
-              <p class="forecastHumid" id="5">Humidity</p>
-            </div>
           </div>
           </div>
           </div>
             
 
         </div>
-      </div>
+      
 
 
       
@@ -168,13 +156,13 @@
 
 
       <!-- sidebar column -->
-      <div class="col s3 offset-s1 card">
+      <div class="col s3 card">
         <div class="card-content activities">
           <h6 class="card-title">Activities</h6>
         </div>
   
       </div>
-
+    </div>
 
     </div>
     </div>
@@ -184,22 +172,32 @@
 
   <footer class="page-footer teal">
     <div class="container">
-      <div class="row">
-        <div class="col l12 s12">
-          <h5 class="white-text">Begin Your Adventure</h5>
-          <p class="grey-text text-lighten-4">We care about the protection the natural environment by individuals, organizations and governments. Our objectives are to conserve natural resources and the existing natural environment, educate the public so that existing damage to the environment can be reversed. </p>
-        </div>
+        <div class="row">
+            <div class="col l12 s12">
+                <div class="row">
+                    <div class="col s3">
+                        <img src="images/beginyouradventure-logo.png" height="200" alt="begin your adventure logo">
+                    </div>
+                    <div class="col s9">
+                        <h5 class="white-text">Begin Your Adventure</h5>
+                        <p class="grey-text text-lighten-4">We care about the protection the natural environment by
+                            individuals, organizations and governments. Our objectives are to conserve natural
+                            resources and the existing natural environment, educate the public so that existing
+                            damage to the environment can be reversed. </p>
+                    </div>
+                </div>
 
+            </div>
 
         </div>
-      </div>
+    </div>
     </div>
     <div class="footer-copyright">
-      <div class="container">
-        Made by Code Junkies
-      </div>
+        <div class="container center">
+            Made by Code Junkies
+        </div>
     </div>
-  </footer>
+</footer>
 
   <script src="https://code.jquery.com/jquery.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
