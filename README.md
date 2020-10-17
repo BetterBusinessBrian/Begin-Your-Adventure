@@ -1,5 +1,5 @@
 
-make gifs of the website in action
+
 
 
 "Begin Your Adventure" allows you to find national parks in the state of your choice. The opening page has a text input area for the state name.
