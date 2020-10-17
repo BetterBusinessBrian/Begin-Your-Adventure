@@ -32,16 +32,28 @@ $.ajax({
   // initialize the carousel
   $(".carousel").carousel();
   }
+  $(document).ready(function(){
+    var carousel_interval = 1000;
+    $('.carousel').carousel();
+    var int;
+    function run(){
+        int = setInterval(function()
+        { 
+            $('.carousel').carousel('next');
+        }, carousel_interval);
+    }
+    function stop(){
+    clearInterval(int);
+    }
+    $('.carousel').hover(stop, run);     
+    }); 
 
-//   $('.carousel').carousel({
-//     fullWidth: true,
-//     indicators: true,
-// });
+    // added interval to switch images//
+  $('.carousel').carousel({full_width: true});
+  setInterval(function(){
+    $('.carousel').carousel('next');
+  }, 1000);
 
-//   $('.carousel').carousel({
-//     fullWidth: true,
-//     indicators: true,
-// });
 
   // Populate Park Name
   $(".parkName").text(park.fullName)
