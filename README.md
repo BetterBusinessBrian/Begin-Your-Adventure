@@ -10,11 +10,11 @@ The project represents the first group project for the five contributors enrolle
 
 Contributors
 Thanks to the following people who contributed to this project:
-Paul Hagwood
-Rachel Moore
-Brian Whitman
-Gene Duncan
-Georgette Bondarek
+[Paul Hagwood](https://pmhagwood.github.io/portfolio/)
+[Rachel Moore](https://rachelmoore2020.github.io/Rachel-Moore-Portfolio/)
+[Brian Whitman](https://github.com/BetterBusinessBrian)
+[Gene Duncan](https://duncangw1.github.io/ResponsivePortfolio/)
+[Georgette Bondarek]()
 
 Things that worked well:
 The group was well suited to work with one another because the interest and experience level was evenly divided between front end developers and mid and back end developers. The front end developers all made designs at the start of the project. We then agreed on a format for the website and divided the pages 
