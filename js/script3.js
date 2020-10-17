@@ -28,10 +28,15 @@ $.ajax({
       $(".carousel").append(newSlide);
       i++;
     });
-  
+
   // initialize the carousel
   $(".carousel").carousel();
   }
+
+//   $('.carousel').carousel({
+//     fullWidth: true,
+//     indicators: true,
+// });
 
 //   $('.carousel').carousel({
 //     fullWidth: true,
@@ -137,7 +142,6 @@ $.ajax({
         })
 
       });
-
     }
 
   });
