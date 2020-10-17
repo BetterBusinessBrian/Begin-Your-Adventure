@@ -1,4 +1,6 @@
+
 // var state = localStorage.getItem("state")
+
 var state = localStorage.getItem("state")
 parkNumber = localStorage.getItem("ParkNumber");
 var queryUrl = "https://developer.nps.gov/api/v1/parks?stateCode=" + state + "&api_key=f752B00Hli3S9ed2PsgaxTti5XBmaUL70IP4ZcTu"
@@ -15,6 +17,7 @@ $.ajax({
   console.log(images);
   var i = 0;
   if (images.length !== 0) {
+
     $(images).each(function () {
       url = images[i].url;
       console.log(url);
@@ -25,13 +28,16 @@ $.ajax({
       $(".carousel").append(newSlide);
       i++;
     });
+
   // initialize the carousel
   $(".carousel").carousel();
   }
+
 //   $('.carousel').carousel({
 //     fullWidth: true,
 //     indicators: true,
 // });
+
   // Populate Park Name
   $(".parkName").text(park.fullName)
   // Populate Activities
@@ -44,6 +50,7 @@ $.ajax({
   $(".description").text(park.description);
   var address = park.addresses[0].line1 + " " + park.addresses[0].line2 + " " + park.addresses[0].city + ", " + park.addresses[0].stateCode + ", " + park.addresses[0].postalCode
   $(".address").text(address);
+
   // operating hours
   if(park.operatingHours.length !== 0){
   var opHours = "Description: " + park.operatingHours[0].description
@@ -56,6 +63,7 @@ $.ajax({
   $(".saturday").text("Saturday: " + park.operatingHours[0].standardHours.saturday);
   $(".sunday").text("Sunday: " + park.operatingHours[0].standardHours.sunday);
   } else {$(".operating").text("Hours not provided via API, please visit offical site.");}
+
   // Entry Fees
   for (i = 0; i < park.entranceFees.length; i++) {
     var cost = park.entranceFees[i].cost
@@ -65,6 +73,7 @@ $.ajax({
     $(".fees").append(fee)
   }
   $('.modal').modal();
+
   // Buttons
   $(".parkDirections").on("click", function () {
     $(".parkDirections").attr('href', park.directionsUrl)
@@ -72,6 +81,7 @@ $.ajax({
   $(".parkWebsite").on("click", function () {
     $(".parkWebsite").attr('href', park.url)
   });
+
   // Weather Info
   // Using latitude and Longitude from previous API to get complete data from next API
   var queryUrl2 = "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + long + "&units=imperial&exclude=hourly,minutely,alert&appid=510c7f3ff27ad1727021b6aa3db8d1b0"
@@ -90,6 +100,7 @@ $.ajax({
     $(".temp").text("Temperature: " + temp);
     $(".humid").text("Humdity: " + humidity);
     $(".windspeed").text("Wind Speed: " + windspeed)
+
     for (i = 1; i < 6; i++) {
       $(".date").each(function () {
         var index = parseInt($(this).attr('id'))
@@ -124,7 +135,9 @@ $.ajax({
             $(this).attr("src", iconUrl);
           }
         })
+
       });
     }
+
   });
 });
