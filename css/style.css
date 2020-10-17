@@ -295,4 +295,6 @@ body {
     color: white;
   }
 
-  
+  /* increasing size of carousel */
+  .carousel .carousel-item {
+    width:400px !important;}
