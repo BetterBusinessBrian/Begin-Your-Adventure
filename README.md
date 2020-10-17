@@ -30,6 +30,9 @@ Thanks to the following people who contributed to this project:
 [Gene Duncan](https://duncangw1.github.io/ResponsivePortfolio/)
 [Georgette Bondarek](https://georgettebondarek.github.io/ResponsivePortfolio/)
 
+**Demo**<br>
+![Project1](https://user-images.githubusercontent.com/68473729/96350002-30c56300-1081-11eb-980e-0cf8ca76a977.gif)
+
 **Things that worked well**<br>
 The group was well suited to work with one another because the interest and experience level was evenly divided between front end developers and mid and back end developers. The front end developers all made designs at the start of the project. We then agreed on a format for the website and divided the pages 
 
