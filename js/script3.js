@@ -34,14 +34,15 @@ $.ajax({
         var int;
         function run() {
           int = setInterval(function () {
+
             $(".carousel").carousel("pause");
-          }, carousel_interval);
-        }
-        function stop() {
-          clearInterval(int);
+
+            $(".carousel").carousel("next");
         }
         $(".carousel").hover(stop, run);
+
         $(".carousel").carousel({ full_width: true });
+
       });
     });
   } else {
