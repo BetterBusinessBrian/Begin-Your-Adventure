@@ -21,6 +21,7 @@ body {
 
   #page3main h6 {
     font-size: 1.4em;
+    
   }
 
   .carousel-slider img {
@@ -209,6 +210,21 @@ body {
       top: 10%;
     }
   }
+  @media only screen and (max-width: 1600px) {
+    .grid-container {
+      grid-template-columns: auto auto auto !important;
+    }
+  }
+  @media only screen and (max-width: 1180px) {
+    .grid-container {
+      grid-template-columns: auto auto !important;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .grid-container {
+      grid-template-columns: auto auto !important;
+    }
+  }
   
   @media only screen and (max-width: 600px) {
     
@@ -251,7 +267,12 @@ body {
       padding: 8px 8px;
     }
     .grid-container {
-      grid-template-columns: auto;
+      grid-template-columns: auto !important;
+    }
+    .card-image img {
+      width: 100%;
+      height: 40vw;
+      object-fit: cover;
     }
   }
   
@@ -270,7 +291,7 @@ body {
     padding: 10px;
     cursor: pointer;
   }
-  .cardtitle{
+  .cardtitle {
     display: block;
     color: #1c1916;
     margin: 15px 0px 0px 24px;
@@ -279,10 +300,16 @@ body {
     font-weight: 500;
   }
   
-  .card-title3{
-    font-weight: bolder;
+  .card-title3 {
+    line-height: 1.5;
+    display: block;
     color: #1c1916;
-    text-decoration: underline;
+    margin: 15px 0px 0px 24px;
+    font-size: 1.2em;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    color: rgba(0, 0, 0, 0.87);
+
   }
   /* Set up grid container */
   .grid-container {
@@ -308,4 +335,8 @@ body {
   /* increasing size of carousel */
   .page3carousel .carousel-item {
     width:400px !important;
+  }
+
+  #logo-container {
+    align-items: left;
   }
