@@ -13,13 +13,13 @@ $.ajax({
   lat = response.data[1].latitude;
   long = response.data[1].longitude;
   park = response.data[parkNumber];
-  console.log(park);
+  // console.log(park);
   images = response.data[parkNumber].images;
   var i = 0;
   if (images.length !== 0) {
     $(images).each(function () {
       url = images[i].url;
-      console.log(url);
+      // console.log(url);
       var newItem = $("<a>").addClass("carousel-item");
       var newImg = $("<img>").attr("src", url);
       // newImg.addClass("materialboxed");
@@ -32,7 +32,6 @@ $.ajax({
         var int;
         function run() {
           int = setInterval(function () {
-
             // $(".carousel").carousel("pause");
 
             $(".carousel").carousel("next");
@@ -65,17 +64,17 @@ $.ajax({
   }
   // populate Park Info
   $(".description").text(park.description);
-  if(park.address)
-  var address =
-    park.addresses[0].line1 +
-    " " +
-    park.addresses[0].line2 +
-    " " +
-    park.addresses[0].city +
-    ", " +
-    park.addresses[0].stateCode +
-    ", " +
-    park.addresses[0].postalCode;
+  if (park.address)
+    var address =
+      park.addresses[0].line1 +
+      " " +
+      park.addresses[0].line2 +
+      " " +
+      park.addresses[0].city +
+      ", " +
+      park.addresses[0].stateCode +
+      ", " +
+      park.addresses[0].postalCode;
   $(".address").text(address);
 
   // operating hours
@@ -136,7 +135,7 @@ $.ajax({
     url: queryUrl2,
     method: "GET",
   }).then(function (response) {
-    console.log(response);
+    // console.log(response);
     // Update Current Data
     var temp = Math.round(response.current.temp) + "°";
     var humidity = response.current.humidity + "%";
