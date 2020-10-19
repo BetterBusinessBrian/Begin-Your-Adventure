@@ -25,21 +25,7 @@ $.ajax({
         var carousel_interval = 4000;
         $(".carousel").carousel();
         var int;
-        function run() {
-          int = setInterval(function () {
-            $(".carousel").carousel("next");
-          }, carousel_interval);
-        }
-        run();
-        // function stop() {
-        //   clearInterval(int);
-        // }
-        // $(".carousel").hover(stop, run);
-        // added interval to switch images//
         $(".carousel").carousel({ full_width: true });
-        // setInterval(function () {
-        //   $(".carousel").next();
-        // }, 4000);
       });
     });
   } else {
