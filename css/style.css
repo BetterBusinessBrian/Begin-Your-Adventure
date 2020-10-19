@@ -316,3 +316,20 @@ input.search-field:focus ~ .search-popup {
   justify-content: center;
   text-align: center;
 }
+/* Reducing 5 day forecast date size to better fit cards and center align */
+.date {
+  font-size: 1rem;
+  text-align: center;
+}
+/* Flexbox for the 5 day forecast row */
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+/* Aligning 5 day forecast cards correctly and adding shadow effect */
+.forecast {
+  margin-right: auto;
+  box-shadow: 3px 3px 3px 3px black;
+}
