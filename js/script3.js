@@ -34,18 +34,15 @@ $.ajax({
         var int;
         function run() {
           int = setInterval(function () {
+
+            $(".carousel").carousel("pause");
+
             $(".carousel").carousel("next");
-          }, carousel_interval);
-        }
-        function stop() {
-          clearInterval(int);
         }
         $(".carousel").hover(stop, run);
-        // added interval to switch images//
+
         $(".carousel").carousel({ full_width: true });
-        setInterval(function () {
-          $(".carousel").carousel("next");
-        }, 1000);
+
       });
     });
   } else {
