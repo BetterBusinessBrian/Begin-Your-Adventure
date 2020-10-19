@@ -33,7 +33,7 @@ $.ajax({
         function run() {
           int = setInterval(function () {
 
-            $(".carousel").carousel("pause");
+            // $(".carousel").carousel("pause");
 
             $(".carousel").carousel("next");
           }, carousel_interval);
@@ -124,6 +124,7 @@ $.ajax({
   });
 
   // Weather Info
+  $(".weatherInfo").text(park.weatherInfo);
   // Using latitude and Longitude from previous API to get complete data from next API
   var queryUrl2 =
     "https://api.openweathermap.org/data/2.5/onecall?lat=" +

@@ -112,9 +112,6 @@ body {
     font-size: inherit;
   }
   
-  footer.page-footer {
-    margin: 0;
-  }
 
   /* search bar CSS */
   
@@ -336,3 +333,4 @@ body {
   .page3carousel .carousel-item {
     width:400px !important;
   }
+
