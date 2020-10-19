@@ -28,8 +28,8 @@ body {
     object-fit: cover;
   }
 
-  .parkDirections {
-    margin-bottom: 10px;
+  .parkWebsite {
+    margin-top: 1px;
   }
   /* --------- Typography ------- */
   p {
@@ -91,17 +91,6 @@ body {
   .sidenav-trigger {
     color: #26a69a;
   }
-  
-  /* .parallax-container {
-    min-height: 380px;
-    line-height: 0;
-    height: auto;
-    color: rgba(255,255,255,.9);
-  }
-    .parallax-container .section {
-      width: 100%;
-    }
-   */
   
   
   
@@ -283,11 +272,7 @@ body {
   
   /* page 2 card css */
 
-  .card {
-    width: 400px;
-    padding: 10px;
-    cursor: pointer;
-  }
+
   .cardtitle {
     display: block;
     color: #1c1916;
