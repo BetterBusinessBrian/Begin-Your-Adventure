@@ -57,17 +57,17 @@ $.ajax({
   }
   // populate Park Info
   $(".description").text(park.description);
-  if(park.address)
-  var address =
-    park.addresses[0].line1 +
-    " " +
-    park.addresses[0].line2 +
-    " " +
-    park.addresses[0].city +
-    ", " +
-    park.addresses[0].stateCode +
-    ", " +
-    park.addresses[0].postalCode;
+  if (park.address)
+    var address =
+      park.addresses[0].line1 +
+      " " +
+      park.addresses[0].line2 +
+      " " +
+      park.addresses[0].city +
+      ", " +
+      park.addresses[0].stateCode +
+      ", " +
+      park.addresses[0].postalCode;
   $(".address").text(address);
 
   // operating hours

@@ -1,94 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Start An Adventure</title>
 
     <!-- CSS  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-</head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="css/materialize.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+    <link
+      href="css/style.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
+      <nav class="parksnav teal" role="navigation">
+        <!-- added nav bar "back to state select" -->
 
-        <nav class="parksnav teal" role="navigation">
-            <!-- added nav bar "back to state select" -->
+        <a href="indexhtml3.html" class="brand-logo white-text"></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="index.html">Back to State Select</a></li>
+        </ul>
 
-            <a href="indexhtml3.html"  class="brand-logo white-text"></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a href="index.html">Back to State Select</a></li>
-            </ul>
-          </div>
-<!-- changed the logo to fit in nav bar -->
-            <div class="nav-wrapper container">
-                <a id="logo-container" href="index.html" class="brand-logo" padding="20 15 10 15"><img
-                        src="images/bwlogoNavfinal.png" height="60" alt="begin your adventure logo"></a>
-            </div>
-        </nav>
-
-
-        <div id="index-banner" class="parallax-container">
-            <div class="section no-pad-bot">
-                <div class="container">
-                    <br><br>
-
-                    <h1 class="header center teal-text text-lighten-2 stateName">Begin Your Adventure</h1>
-
-                    <br><br>
-
-                </div>
-                <div id="message" class="center"></div>
-            </div>
-            <div class="parallax"><img src="images/Zion_National_Park_Cliffs.2e16d0ba.fill-1440x605.jpg"
-                    alt="nationalpark image"></div>
+        <!-- changed the logo to fit in nav bar -->
+        <div class="nav-wrapper container">
+          <a
+            id="logo-container"
+            href="index.html"
+            class="brand-logo"
+            padding="20 15 10 15"
+            ><img
+              src="images/bwlogoNavfinal.png"
+              height="60"
+              alt="begin your adventure logo"
+          /></a>
         </div>
+      </nav>
+
+      <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+          <div class="container">
+            <br /><br />
+
+            <h1 class="header center teal-text text-lighten-2 stateName">
+              Begin Your Adventure
+            </h1>
+
+            <br /><br />
+          </div>
+          <div id="message" class="center"></div>
+        </div>
+        <div class="parallax">
+          <img
+            src="images/Zion_National_Park_Cliffs.2e16d0ba.fill-1440x605.jpg"
+            alt="nationalpark image"
+          />
+        </div>
+      </div>
     </header>
     <main>
-        <div class= "pointer">
-            <h6 >Click on any park to view quick information, or the orange link for their official website</h6>
-        </div>
+      <div class="pointer">
+        <h6>
+          Click on any park to view quick information, or the orange link for
+          their official website
+        </h6>
+      </div>
 
-        <!-- Insert parks cards -->
-        <div class="row">
-            <div class="grid-container starter"></div>
-        </div>
+      <!-- Insert parks cards -->
+      <div class="row">
+        <div class="grid-container starter"></div>
+      </div>
     </main>
     <!-- Footer -->
 
     <footer class="page-footer teal">
-        <div class="container">
+      <div class="container">
+        <div class="row">
+          <div class="col l12">
             <div class="row">
-                <div class="col l12">
-                    <div class="row">
-                        <div class="col l3">
-                            <img src="images/beginyouradventure-logo.png" height="200" alt="begin your adventure logo">
-                        </div>
-                        <div class = "col l1"></div>
-                        <div class="col l8">
-                            <h5 class="white-text">Begin Your Adventure</h5>
-                            <p class="grey-text text-lighten-4">We care about the protection the natural environment by
-                                individuals, organizations and governments. Our objectives are to conserve natural
-                                resources and the existing natural environment, educate the public so that existing
-                                damage to the environment can be reversed. </p>
-                        </div>
-                    </div>
-    
-                </div>
-    
+              <div class="col l3">
+                <img
+                  src="images/beginyouradventure-logo.png"
+                  height="200"
+                  alt="begin your adventure logo"
+                />
+              </div>
+              <div class="col l1"></div>
+              <div class="col l8">
+                <h5 class="white-text">Begin Your Adventure</h5>
+                <p class="grey-text text-lighten-4">
+                  We care about the protection the natural environment by
+                  individuals, organizations and governments. Our objectives are
+                  to conserve natural resources and the existing natural
+                  environment, educate the public so that existing damage to the
+                  environment can be reversed.
+                </p>
+              </div>
             </div>
+          </div>
         </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container center">
-                Made by Code Junkies
-            </div>
-        </div>
-    </footer>
+      </div>
 
+      <div class="footer-copyright">
+        <div class="container center">Made by Code Junkies</div>
+      </div>
+    </footer>
 
     <!--  Scripts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -96,9 +124,5 @@
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
     <script src="./js/script2.js"></script>
-
-
-
-</body>
-
+  </body>
 </html>
