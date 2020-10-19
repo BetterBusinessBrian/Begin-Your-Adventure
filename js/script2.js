@@ -1,7 +1,10 @@
 
 var parkName = ""
+var stateName = localStorage.getItem("stateName")
 var state = localStorage.getItem("state")
 var queryUrl = "https://developer.nps.gov/api/v1/parks?stateCode=" + state + "&api_key=f752B00Hli3S9ed2PsgaxTti5XBmaUL70IP4ZcTu"
+
+$(".stateName").text(stateName);
 
 $.ajax({
     url: queryUrl,

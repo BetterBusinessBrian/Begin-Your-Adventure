@@ -76,10 +76,14 @@ $(document).ready(function () {
             var stateAbbr = states[i][0];
 
             if (states[i][0] === statePassed) {
+                var fullname = statePassed.toUpperCase();
+                localStorage.setItem("stateName", fullname)
                     state = (states[i][1]);
                     console.log('returned ', states[i][1]);
                     return (state);
             } else if (states[i][1] === statePassed) {
+                var fullname = states[i][0].toUpperCase();
+                localStorage.setItem("stateName", fullname)
                 state = (states[i][1]);
                 console.log('returned ', states[i][1]);
                 return (state);
@@ -94,7 +98,8 @@ $(document).ready(function () {
         }
     }
 
-    $("#searchForm").submit(function() {
+    $("#searchForm").submit(function(event) {
+        event.preventDefault();
         var state = $('#search-input').val();
         // console.log('state = ', state);
         var stateName = abbrState(state);
