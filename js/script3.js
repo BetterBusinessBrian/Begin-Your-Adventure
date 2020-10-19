@@ -10,13 +10,11 @@ $.ajax({
   url: queryUrl,
   method: "GET",
 }).then(function (response) {
-  console.log(response);
   lat = response.data[1].latitude;
   long = response.data[1].longitude;
   park = response.data[parkNumber];
   console.log(park);
   images = response.data[parkNumber].images;
-  console.log(images);
   var i = 0;
   if (images.length !== 0) {
     $(images).each(function () {
@@ -29,7 +27,7 @@ $.ajax({
       $(".carousel").append(newSlide);
       i++;
       $(document).ready(function () {
-        var carousel_interval = 1000;
+        var carousel_interval = 4000;
         $(".carousel").carousel();
         var int;
         function run() {
@@ -38,11 +36,18 @@ $.ajax({
             $(".carousel").carousel("pause");
 
             $(".carousel").carousel("next");
+          }, carousel_interval);
         }
-        $(".carousel").hover(stop, run);
-
+        run();
+        // function stop() {
+        //   clearInterval(int);
+        // }
+        // $(".carousel").hover(stop, run);
+        // added interval to switch images//
         $(".carousel").carousel({ full_width: true });
-
+        // setInterval(function () {
+        //   $(".carousel").next();
+        // }, 4000);
       });
     });
   } else {
@@ -60,6 +65,7 @@ $.ajax({
   }
   // populate Park Info
   $(".description").text(park.description);
+  if(park.address)
   var address =
     park.addresses[0].line1 +
     " " +
@@ -110,9 +116,11 @@ $.ajax({
   // Buttons
   $(".parkDirections").on("click", function () {
     $(".parkDirections").attr("href", park.directionsUrl);
+    $(".parkDirections").attr("target", "_blank");
   });
   $(".parkWebsite").on("click", function () {
     $(".parkWebsite").attr("href", park.url);
+    $(".parkWebsite").attr("target", "_blank");
   });
 
   // Weather Info
