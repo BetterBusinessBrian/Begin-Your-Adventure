@@ -18,7 +18,6 @@ $.ajax({
 
         // adding data index for on click
         div1.data("dataNum", [i]);
-        console.log(div1.data());
         // ______________________
         var div2 = $('<div/>');
         div2.addClass("card-image");
@@ -53,8 +52,5 @@ $.ajax({
         var dataNumber = $(this).data("dataNum")
         localStorage.setItem("ParkNumber", dataNumber);
         location.href = "index3.html";
-
-        console.log("clicked")
-
     })
 });

@@ -63,14 +63,9 @@ $(document).ready(function () {
             ['wyoming', 'wy'],
         ];
 
-        // console.log('state passed ', input);
 
         var statePassed = input.toLowerCase();
-        // console.log('name passed is now ', statePassed);
 
-        // input = input.replace(/\w\S*/g, function (txt) { return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase(); });
-        // console.log('input is ', input);
-        
         for (i = 0; i < states.length; i++) {
             var stateName = states[i][0];
             var stateAbbr = states[i][0];
@@ -101,7 +96,6 @@ $(document).ready(function () {
     $("#searchForm").submit(function(event) {
         event.preventDefault();
         var state = $('#search-input').val();
-        // console.log('state = ', state);
         var stateName = abbrState(state);
         localStorage.setItem("state", stateName);
         location.href = "index2.html";

@@ -1,5 +1,3 @@
-// var state = localStorage.getItem("state")
-
 var state = localStorage.getItem("state");
 parkNumber = localStorage.getItem("ParkNumber");
 var queryUrl =
@@ -13,16 +11,13 @@ $.ajax({
   lat = response.data[1].latitude;
   long = response.data[1].longitude;
   park = response.data[parkNumber];
-  console.log(park);
   images = response.data[parkNumber].images;
   var i = 0;
   if (images.length !== 0) {
     $(images).each(function () {
       url = images[i].url;
-      console.log(url);
       var newItem = $("<a>").addClass("carousel-item");
       var newImg = $("<img>").attr("src", url);
-      // newImg.addClass("materialboxed");
       var newSlide = newItem.append(newImg);
       $(".carousel").append(newSlide);
       i++;
@@ -32,9 +27,6 @@ $.ajax({
         var int;
         function run() {
           int = setInterval(function () {
-
-            // $(".carousel").carousel("pause");
-
             $(".carousel").carousel("next");
           }, carousel_interval);
         }
@@ -136,7 +128,6 @@ $.ajax({
     url: queryUrl2,
     method: "GET",
   }).then(function (response) {
-    console.log(response);
     // Update Current Data
     var temp = Math.round(response.current.temp) + "°";
     var humidity = response.current.humidity + "%";
