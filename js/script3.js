@@ -1,5 +1,6 @@
 var state = localStorage.getItem("state");
 parkNumber = localStorage.getItem("ParkNumber");
+$('.sidenav').sidenav();
 var queryUrl =
   "https://developer.nps.gov/api/v1/parks?stateCode=" +
   state +
