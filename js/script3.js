@@ -1,6 +1,6 @@
 var state = localStorage.getItem("state");
 parkNumber = localStorage.getItem("ParkNumber");
-$('.sidenav').sidenav();
+$(".sidenav").sidenav();
 var queryUrl =
   "https://developer.nps.gov/api/v1/parks?stateCode=" +
   state +
@@ -166,7 +166,7 @@ $.ajax({
           if (i == index) {
             var iconCode = response.daily[i].weather[0].icon;
             var iconUrl =
-              "http://openweathermap.org/img/wn/" + iconCode + "@2x.png";
+              "https://openweathermap.org/img/wn/" + iconCode + "@2x.png";
             $(this).attr("src", iconUrl);
           }
         });
