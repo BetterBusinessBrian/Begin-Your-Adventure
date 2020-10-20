@@ -26,9 +26,10 @@ nav .brand-logo {
 .carousel-slider img {
   object-fit: cover;
 }
-
+/* Margins between buttons for spacing */
+.parkDirections,
 .parkWebsite {
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* --------- Typography ------- */
