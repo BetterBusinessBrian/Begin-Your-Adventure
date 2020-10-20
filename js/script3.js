@@ -120,7 +120,7 @@ $.ajax({
     var humidity = response.current.humidity + "%";
     var windspeed = response.current.wind_speed + "MPH";
     var iconCode = response.current.weather[0].icon;
-    var iconUrl = "http://openweathermap.org/img/wn/" + iconCode + "@2x.png";
+    var iconUrl = "https://openweathermap.org/img/wn/" + iconCode + "@2x.png";
     $(".headIcon").attr("src", iconUrl);
     $(".temp").text("Temperature: " + temp);
     $(".humid").text("Humdity: " + humidity);
